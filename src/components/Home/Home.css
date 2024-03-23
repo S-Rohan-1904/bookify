@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+/*:root {
+  --bg-color: #123;
+}
+.headline {
+  font-weight: 400;
+  font-size: clamp(1rem, 3vw + 1rem, 4rem);
+  font-family: "Source Code Pro", monospace;
+  position: relative;
+  width: max-content;
+  margin: auto;
+}
+
+.headline::before,
+.headline::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.headline::before {
+  background: var(--bg-color);
+  animation: typewriter 6s steps(27) 1s forwards;
+}
+
+.headline::after {
+  width: 0.125em;
+  height: 1em;
+  margin-block: auto;
+  background: white;
+  animation: typewriter 6s steps(27) 1s forwards, blink 500ms steps(27) infinite;
+}
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+} */
+
+:root {
+  --bg-color: #123;
+  --typewriterSpeed: 6s;
+  --typewriterCharacters: 27;
+}
+
+.headline {
+  font-size: clamp(1rem, 3vw + 1rem, 4rem);
+  font-weight: 400;
+  position: relative;
+  margin: auto;
+  font-family: "Source Code Pro", monospace;
+  position: relative;
+  width: max-content;
+}
+
+.headline::before,
+.headline::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.headline::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+.headline::after {
+  width: 0.125em;
+  height: 1.5em;
+  margin-block: auto;
+  background: rgb(255, 255, 255);
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,16 @@
+div.book-container {
+  gap: 2rem;
+}
+
+h1.title {
+  display: inline-block;
+  text-align: left;
+  padding-block: 0.5rem;
+}
+
+h1.trending-title {
+  display: inline-block;
+  text-align: left;
+  margin: 0;
+  padding-block: 1.5rem;
+}

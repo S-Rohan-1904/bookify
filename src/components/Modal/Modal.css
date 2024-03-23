@@ -1,0 +1,65 @@
+body.active-modal {
+  overflow-y: hidden;
+}
+
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: rgba(49, 49, 49, 0.9);
+}
+
+.modal-content {
+  z-index: 100;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  background: rgb(45, 63, 81);
+  color: white;
+  padding: 2rem;
+  border-radius: 3px;
+  min-width: 10rem;
+  max-width: 35rem;
+  min-height: 20rem;
+  max-height: 90vh;
+  overflow: scroll;
+}
+
+.close-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2.5rem;
+}
+.star {
+  position: absolute;
+  top: 1rem;
+  font-size: 2.5rem;
+}
+
+.star-click {
+  color: gold;
+  position: absolute;
+  top: 1rem;
+  font-size: 2.5rem;
+}
+
+.star:hover {
+  color: gold;
+}
+
+.title {
+  margin-block: 1.25rem;
+}
+.author {
+  margin-block: 1rem;
+}

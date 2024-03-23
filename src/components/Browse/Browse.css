@@ -1,0 +1,121 @@
+.controls {
+  display: grid;
+  grid-template-columns: 0.75fr 2fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 0;
+  padding-top: 2rem;
+}
+
+.search {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  border-radius: 2rem;
+  max-height: 4rem;
+  background: rgb(45, 63, 81);
+  transition: background 0.25s;
+}
+
+.filter-option {
+  flex-wrap: wrap;
+  background-color: rgb(45, 63, 81);
+  outline: none;
+  border: none;
+  padding: 1rem;
+  font-size: 1.25rem;
+  border-radius: 2rem;
+  color: white;
+  margin: 0 0.5rem 1rem 0.5rem;
+}
+
+.search:focus-within {
+  background: rgb(40, 58, 81);
+}
+
+.search-input {
+  font-size: 1rem;
+  font-family: "Lexend", sans-serif;
+  color: #ffffff;
+  margin-left: 1rem;
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 20rem;
+}
+
+.search-input::placeholder {
+  color: rgb(255, 255, 255, 0.6);
+}
+
+.active-filter {
+  background-color: rgb(37, 75, 191);
+}
+
+.book-container {
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+@media only screen and (max-width: 1450px) {
+  .controls {
+    display: flex;
+    flex-direction: column;
+  }
+  .search {
+    margin: 0;
+  }
+  .filter-option {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .filter-option {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .search {
+    width: 20rem;
+  }
+  .filter-option {
+    font-size: 0.75rem;
+    padding: 0.75rem;
+    margin: 0 0.25rem 0.75rem 0.25rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .search {
+    width: 15rem;
+  }
+  .filter-option {
+    font-size: 0.75rem;
+    padding: 0.75rem;
+    margin: 0 0.25rem 0.75rem 0.25rem;
+  }
+}
+
+@media only screen and (max-width: 463px) {
+  .book-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .filter-option {
+    font-size: 0.65rem;
+    padding: 0.75rem;
+    margin: 0 0.05rem 0.5rem 0.05rem;
+  }
+}
